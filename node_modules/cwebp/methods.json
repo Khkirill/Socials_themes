@@ -1,0 +1,264 @@
+{
+  "global": {
+    "crop": {
+      "type": [
+        "number",
+        "number",
+        "number",
+        "number"
+      ],
+      "description": "crop picture with the given rectangle"
+    },
+    "multiThreading": {
+      "key": "mt",
+      "type": "boolean",
+      "description": "use multi-threading if available"
+    },
+    "noasm": {
+      "type": "boolean",
+      "description": "disable all assembly optimizations"
+    }
+  },
+  "cwebp": {
+    "quality": {
+      "key": "q",
+      "type": "number",
+      "description": "quality factor (0:small..100:big), default=75"
+    },
+    "alphaQuality": {
+      "key": "alpha_q",
+      "type": "number",
+      "description": "transparency-compression quality (0..100), default=100"
+    },
+    "preset": {
+      "description": "preset setting, one of: default, photo, picture, drawing, icon, text"
+    },
+    "losslessPreset": {
+      "key": "z",
+      "type": "number",
+      "description": "activates lossless preset with given level in [0:fast, ..., 9:slowest]"
+    },
+    "compression": {
+      "key": "m",
+      "type": "number",
+      "description": "compression method (0=fast, 6=slowest), default=4"
+    },
+    "segments": {
+      "type": "number",
+      "description": "number of segments to use (1..4), default=4"
+    },
+    "size": {
+      "type": "number",
+      "description": "target size (in bytes)"
+    },
+    "psnr": {
+      "type": "number",
+      "description": "target PSNR (in dB. typically: 42)"
+    },
+    "inputSize": {
+      "key": "s",
+      "type": [
+        "number",
+        "number"
+      ],
+      "description": "input size (width x height) for YUV"
+    },
+    "sns": {
+      "type": "number",
+      "description": "spatial Noise Shaping (0:off, 100:max), default=50"
+    },
+    "strength": {
+      "key": "f",
+      "type": "number",
+      "description": "filter strength (0=off..100), default=60"
+    },
+    "sharpness": {
+      "type": "number",
+      "description": "filter sharpness (0:most .. 7:least sharp), default=0"
+    },
+    "strong": {
+      "type": "boolean",
+      "exclude": "nostrong",
+      "description": "use strong filter instead of simple (default)"
+    },
+    "nostrong": {
+      "type": "boolean",
+      "exclude": "strong",
+      "aliases": [
+        "simple"
+      ],
+      "description": "use simple filter instead of strong"
+    },
+    "sharpYUV": {
+      "key": "sharp_yuv",
+      "type": "boolean",
+      "description": "use sharper (and slower) RGB->YUV conversion"
+    },
+    "partitionLimit": {
+      "key": "partition_limit",
+      "type": "number",
+      "description": "limit quality to fit the 512k limit on the first partition (0=no degradation ... 100=full)"
+    },
+    "pass": {
+      "type": "number",
+      "description": "analysis pass number (1..10)"
+    },
+    "resize": {
+      "type": [
+        "number",
+        "number"
+      ],
+      "description": "resize picture (after any cropping)"
+    },
+    "lowMemory": {
+      "key": "low_memory",
+      "type": "boolean",
+      "description": "reduce memory usage (slower encoding)"
+    },
+    "dump": {
+      "key": "d",
+      "description": "dump the compressed output (PGM file)"
+    },
+    "alphaMethod": {
+      "key": "alpha_method",
+      "type": "number",
+      "description": "transparency-compression method (0..1), default=1"
+    },
+    "alphaFilter": {
+      "key": "alpha_filter",
+      "description": "predictive filtering for alpha plane, one of: none, fast (default) or best"
+    },
+    "alphaCleanup": {
+      "key": "alpha_cleanup",
+      "type": "boolean",
+      "description": "clean RGB values in transparent area"
+    },
+    "blendAlpha": {
+      "key": "blend_alpha",
+      "description": "blend colors against background color expressed as RGB values written in hexadecimal, e.g. 0xc0e0d0 for red=0xc0 green=0xe0 and blue=0xd0"
+    },
+    "noalpha": {
+      "type": "boolean",
+      "description": "discard any transparency information"
+    },
+    "exact": {
+      "type": "boolean",
+      "description": "preserve RGB values in transparent area, default=off"
+    },
+    "lossless": {
+      "type": "boolean",
+      "description": "encode image losslessly, default=off"
+    },
+    "nearLossless": {
+      "key": "near_lossless",
+      "type": "number",
+      "description": "use near-lossless image preprocessing (0..100=off), default=100"
+    },
+    "hint": {
+      "description": "specify image characteristics hint, one of: photo, picture or graph"
+    },
+    "metadata": {
+      "description": "comma separated list of metadata to copy from the input to the output if present, valid values: all, none (default), exif, icc, xmp"
+    },
+    "jpegLike": {
+      "key": "jpeg_like",
+      "type": "boolean",
+      "description": "roughly match expected JPEG size (experimental)"
+    },
+    "autoAdjust": {
+      "key": "af",
+      "type": "boolean",
+      "description": "auto-adjust filter strength (experimental)"
+    },
+    "pre": {
+      "type": "number",
+      "description": "pre-processing filter (experimental)"
+    },
+    "verbose": {
+      "key": "v",
+      "type": "boolean",
+      "description": "verbose error reporting"
+    }
+  },
+  "dwebp": {
+    "png": {
+      "key": "-",
+      "type": "boolean",
+      "exclude": ["pam", "ppm", "bmp", "tiff", "pgm", "yuv"],
+      "description": "save as PNG format (default)"
+    },
+    "pam": {
+      "type": "boolean",
+      "exclude": ["png", "ppm", "bmp", "tiff", "pgm", "yuv"],
+      "description": "save the raw RGBA samples as a color PAM"
+    },
+    "ppm": {
+      "type": "boolean",
+      "exclude": ["png", "pam", "bmp", "tiff", "pgm", "yuv"],
+      "description": "save the raw RGB samples as a color PPM"
+    },
+    "bmp": {
+      "type": "boolean",
+      "exclude": ["png", "pam", "ppm", "tiff", "pgm", "yuv"],
+      "description": "save as uncompressed BMP format"
+    },
+    "tiff": {
+      "type": "boolean",
+      "exclude": ["png", "pam", "ppm", "bmp", "pgm", "yuv"],
+      "description": "save as uncompressed TIFF format"
+    },
+    "pgm": {
+      "type": "boolean",
+      "exclude": ["png", "pam", "ppm", "bmp", "tiff", "yuv"],
+      "description": "save the raw YUV samples as a grayscale PGM file with IMC4 layout"
+    },
+    "yuv": {
+      "type": "boolean",
+      "exclude": ["png", "pam", "ppm", "bmp", "tiff", "pgm"],
+      "description": "save the raw YUV samples in flat layout"
+    },
+    "dither": {
+      "type": "number",
+      "description": "dithering strength (in 0..100)"
+    },
+    "alphaDither": {
+      "key": "alpha_dither",
+      "type": "boolean",
+      "description": "use alpha-plane dithering if needed"
+    },
+    "scale": {
+      "type": [
+        "number",
+        "number"
+      ],
+      "aliases": [
+        "resize"
+      ],
+      "description": "scale the output (after any cropping)"
+    },
+    "flip": {
+      "type": "boolean",
+      "description": "flip the output vertically"
+    },
+    "nofancy": {
+      "type": "boolean",
+      "description": "don't use the fancy YUV420 upscaler."
+    },
+    "nofilter": {
+      "type": "boolean",
+      "description": "disable in-loop filtering."
+    },
+    "nodither": {
+      "type": "boolean",
+      "description": "disable dithering"
+    },
+    "alpha": {
+      "type": "boolean",
+      "description": "only save the alpha plane."
+    },
+    "incremental": {
+      "type": "boolean",
+      "description": "use incremental decoding (useful for tests)"
+    }
+  }
+}

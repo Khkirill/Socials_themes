@@ -1,0 +1,29 @@
+/**
+ * @file 将ttf字形转换为svg路径`d`
+ * @author mengke01(kekee000@gmail.com)
+ */
+
+
+
+var contour2svg = require('./contour2svg');
+
+/**
+ * contours轮廓转svgpath
+ *
+ * @param {Array} contours 轮廓list
+ * @param {number} precision 精确度
+ * @return {string} path字符串
+ */
+function contours2svg(contours, precision) {
+
+    if (!contours.length) {
+        return '';
+    }
+
+    return contours.map(function (contour) {
+        return contour2svg(contour, precision);
+    }).join('');
+}
+
+module.exports = contours2svg;
+    

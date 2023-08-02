@@ -1,0 +1,250 @@
+.accordion {
+
+    h1 {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 72px;
+        text-align: center;
+        
+        color: $grey2;
+
+        @media(max-width: 430px) {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+
+    &__p2 {
+        @media(max-width: 430px) {
+            display: none;
+        }
+    }
+
+    &__main {
+        width: 1110px;
+        margin-top: 42px;
+        margin-left: 95px;
+
+        @media(max-width: 430px) {
+            margin-left: 0px;
+        }
+    }
+
+    &__first {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+
+        p {
+            @media(max-width: 430px) {
+                display: none;
+            }
+        }
+    }
+
+    img {
+        background: linear-gradient(180deg, rgba(95, 77, 77, 0.5) 0%, rgba(96, 57, 31, 0.5) 100%);
+        border-radius: 50px 0px;
+
+        @media(max-width: 430px) {
+            width: 395px;
+        }
+
+        @media(max-width: 375px) {
+            width: 360px;
+        }
+
+        @media(max-width: 325px) {
+            width: 300px;
+        }
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: $grey2;
+
+        @media(max-width: 430px) {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    &__p2 {
+        margin-top: 34px;
+    }
+
+    //Accordion
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 36px;
+        gap: 17px;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 47px;
+
+        background: $white2;
+        border-radius: 40px;
+        width: 1110px;
+        height: 100px;
+
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 54px;
+        color: $orange;
+        transition: 0.5s;
+    
+
+        @media(max-width: 430px) {
+            width: 390px;
+            height: 69px;
+            border-radius: 20px;
+
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 27px;
+        }
+
+        @media(max-width: 375px) {
+            width: 360px;
+            height: 60px;
+
+            font-size: 14px;
+        }
+
+        @media(max-width: 325px) {
+            width: 305px;
+            height: 50px;
+
+            font-size: 12px;
+        }
+    }
+
+    .active, &__button::after {
+        border-radius: 0px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+    }
+
+    &__button::after {
+        content: '\005E'; /* Unicode character for "plus" sign (+) */
+        transform: rotate(-180deg);
+        margin-right: 40px;
+        
+    }
+
+    .active:after {
+        content: '\005E';
+        transform: rotate(-360deg);
+        
+    }
+
+    &__panel {
+        display: none;
+        overflow: hidden;
+        background: $white2;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        padding: 0px 40px;
+        transition: max-height 0.2s ease-out;
+
+        @media(max-width: 430px) {
+            width: 390px;
+            padding: 20px 10px;
+            
+        }
+
+        @media(max-width: 375px) {
+            width: 360px;
+
+            
+        }
+
+        @media(max-width: 325px) {
+            width: 305px;
+
+            
+        }
+
+    }
+
+    &__line1 {
+        height: 6px;
+        border: none;
+        background: $orange2;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__panel1,
+    &__panel2,
+    &__panel3 {
+        display: flex;
+        gap: 30px;
+
+        @media(max-width: 430px) {
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+        }
+    }
+
+    &__panelp {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 36px;
+        color: $grey2;
+
+        @media(max-width: 430px) {
+            font-size: 14px;
+            line-height: 40;
+        }
+
+        @media(max-width: 375px) {
+            font-size: 10px;
+        }
+    }
+
+    &__buttons-mobile {
+        display: none;
+
+        @media(max-width: 430px) {
+            display: block;
+        }
+    }
+
+    &__lineimg {
+        @media(max-width: 430px) {
+            display: none;
+        }
+    }
+
+    &__line11 {
+        display: none;
+        height: 6px;
+        border: none;
+        background: $orange2;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        @media(max-width: 430px) {
+            display: flex;
+        }
+    }
+}
+
+.panel-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+}

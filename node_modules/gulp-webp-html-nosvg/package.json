@@ -1,0 +1,28 @@
+{
+	"name": "gulp-webp-html-nosvg",
+	"version": "1.1.1",
+	"description": "Replaces the <img> tag with <picture> <source> <img> in HTML files. No SVG, GIF format and data- support",
+	"main": "index.js",
+	"dependencies": {
+		"gulp-util": "^3.0.8",
+		"through2": "^3.0.1"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"url": "https://github.com/FreelancerLifeStyle/gulp-webp-html-nosvg"
+	},
+	"bugs": {
+		"url": "https://github.com/FreelancerLifeStyle/gulp-webp-html-nosvg/issues"
+	},
+	"homepage": "https://www.youtube.com/c/freelancerlifestyle",
+	"keywords": [
+		"gulp",
+		"webp",
+		"html"
+	],
+	"author": "FLS",
+	"license": "MIT"
+}

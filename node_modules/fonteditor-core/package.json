@@ -1,0 +1,68 @@
+{
+  "name": "fonteditor-core",
+  "version": "1.0.5",
+  "description": "fonts (ttf, woff, eot, svg, otf) parse, write, transform. glyph adjust.",
+  "keywords": [
+    "sfnt",
+    "font",
+    "editor",
+    "ttf",
+    "woff",
+    "svg",
+    "eot",
+    "otf"
+  ],
+  "homepage": "https://github.com/kekee000/fonteditor-core",
+  "author": [
+    {
+      "name": "kekee000",
+      "email": "kekee000@gmail.com"
+    },
+    {
+      "name": "junmer",
+      "email": "junmer@foxmail.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/kekee000/fonteditor-core/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/kekee000/fonteditor-core/raw/master/LICENSE"
+    }
+  ],
+  "scripts": {
+    "publish_npm": "sh tool/publish-node.sh",
+    "test": "phantomjs test/run-jasmine.js test/SpecRunner.html",
+    "test_node": "sh tool/test-node.sh",
+    "lint": "fecs ./src --reporter=baidu --rule"
+  },
+  "edp": {
+    "main": "src/main",
+    "dependencies": {}
+  },
+  "dependencies": {
+    "xmldom": "~0.1.19"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kekee000/fonteditor-core.git"
+  },
+  "files": [
+    "common",
+    "graphics",
+    "math",
+    "ttf",
+    "nodejs",
+    "main.js"
+  ],
+  "main": "main.js",
+  "devDependencies": {
+    "b3b": "0.0.1",
+    "esprima": "^2.4.1",
+    "estraverse": "^4.1.0",
+    "pako": "^0.2.7",
+    "phantomjs": "^1.9.17"
+  }
+}

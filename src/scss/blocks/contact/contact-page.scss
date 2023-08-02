@@ -1,0 +1,245 @@
+.contact-page {
+    margin-top: 87px;
+
+    h2 {
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 72px;
+
+        text-align: center;
+        color: #484848;
+
+        @media(max-width: 430px) {
+            font-size: 40px;
+        }
+
+        @media(max-width: 320px) {
+            font-size: 36px;
+        }
+    }
+
+    img {
+        @media(max-width: 375px) {
+            width: 34px;
+            height: 34px;
+        }
+    }
+
+    h3 {
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 54px;
+        margin-top: 44px;
+        margin-right: 30px;
+
+        text-align: center;
+        color: #484848;
+
+        @media(max-width: 430px) {
+            font-size: 28px;
+        }
+
+        @media(max-width: 375px) {
+            font-size: 26px;
+        }
+
+        @media(max-width: 320px) {
+            font-size: 22px;
+        }
+    }
+
+    h4 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 39px;
+
+        text-align: center;
+        color: #484848;
+
+        @media(max-width: 375px) {
+            font-size: 22px;
+        }
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 39px;
+
+        color: #484848;
+
+        @media(max-width: 375px) {
+            font-size: 18px;
+        }
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        width: 1100px;
+        margin-left: 95px;
+
+        @media(max-width: 430px) {
+            width: 400px;
+            margin-left: 0px;
+        }
+
+        @media(max-width: 375px) {
+            width: 370px;
+        }
+
+        @media(max-width: 320px) {
+            width: 300px;
+        }
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 64px;
+        gap: 25px;
+
+        @media(max-width: 430px) {
+            flex-direction: column;
+        }
+    }
+
+    &__first {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        border: 20px solid #F0F5FF;
+        border-radius: 40px;
+        width: 600px;
+        height: 250px;
+        padding-bottom: 30px;
+
+        @media(max-width: 430px) {
+            width: 400px;
+            height: 200px;
+        }
+
+        @media(max-width: 375px) {
+            width: 340px;
+            height: 180px;
+        }
+
+        @media(max-width: 320px) {
+            width: 300px;
+            border: 8px solid #F0F5FF;
+        }
+    }
+
+    &__second {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 20px solid #F0F5FF;
+        border-radius: 40px;
+        width: 550px;
+        height: 250px;
+
+        @media(max-width: 430px) {
+            width: 400px;
+            height: 200px;
+        }
+
+        @media(max-width: 320px) {
+            width: 300px;
+            border: 8px solid #F0F5FF;
+        }
+    }
+
+    &__second-block2-image {
+        margin-left: 65px;
+    }
+
+    &__second-block1,
+    &__second-block2 {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        padding: 0px 10px;
+
+        @media(max-width: 430px) {
+            gap: 20px;
+        }
+
+        @media(max-width: 320px) {
+            gap: 0px;
+        }
+
+        p {
+            @media(max-width: 320px) {
+                font-size: 16px;
+            }
+        }
+           
+        
+    }
+
+
+    &__second-block1 {
+        @media(max-width: 430px) {
+            gap: 30px;
+        }
+
+        @media(max-width: 320px) {
+            gap: 10px;
+        }
+
+        p {
+            @media(max-width: 430px) {
+                font-size: 18px;
+            }
+
+            @media(max-width: 375px) {
+                font-size: 16px;
+            }
+
+            @media(max-width: 320px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__second-block2-telega {
+        display: flex;
+        align-items: center;
+
+        h5 {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 39px;
+
+            color: #484848;
+
+            @media(max-width: 430px) {
+                font-size: 18px;
+            }
+
+            @media(max-width: 375px) {
+                font-size: 16px;
+            }
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 39px;
+
+            color: #484848;
+
+            @media(max-width: 430px) {
+                font-size: 16px;
+            }
+
+            @media(max-width: 320px) {
+                font-size: 14px;
+            }
+        }
+    }
+}

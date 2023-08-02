@@ -1,0 +1,209 @@
+.boost {
+    margin-top: 80px;
+
+    &__main {
+        display: flex;
+        margin-left: 95px;
+        gap: 40px;
+
+        @media(max-width: 430px) {
+            display: none;
+        }
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background: #F0F5FF;
+        border-radius: 0px 40px;
+        width: 700px;
+        height: 400px;
+        padding: 20px 20px;
+    }
+
+    &__button-page {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 48px;
+        padding: 0px 15px;
+
+        color: $white;
+
+        background: linear-gradient(180deg, #EA686B 0%, #ED8155 100%);
+        border-radius: 40px;
+        width: 500px;
+        height: 60px;
+        transition: 0.4s;
+    }
+
+    &__button-page:hover {
+        background: $white;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 48px;
+
+        color: #E64A19;
+
+        
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        h2 {
+            text-align: center;
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 72px;
+
+            color: #484848;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+
+            color: #484848;
+        }
+    }
+
+    //MOBILE
+    &__main-mobile {
+        display: none;
+
+            @media(max-width:414px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 17px;
+            }
+    }
+
+    &__button-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 343px;
+        height: 82px;
+        padding-left: 17px;
+
+        background: linear-gradient(180deg, #EA686B 0%, #ED8155 100%);
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: $white;
+        transition: 0.5s;
+    }
+
+    .active, &__button-mobile::after {
+        border-radius: 0px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+    }
+
+    &__button-mobile::after {
+        content: '\005E'; /* Unicode character for "plus" sign (+) */
+        transform: rotate(-180deg);
+        margin-right: 40px;
+    }
+
+    .active:after {
+        content: '\005E';
+        transform: rotate(-360deg);
+    }
+
+    &__panel-text {
+        display: none;
+        overflow: hidden;
+        background: $white2;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        padding: 20px 20px;
+        width: 343px;
+    }
+
+
+    h5 {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 10px;
+
+        color: #484848;
+    }
+
+    &__panel-p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 10px;
+
+        color: #484848;
+    }
+
+    ul {
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        margin-left: 10px;
+
+        color: #484848;
+    }
+
+    li::marker {
+        color: #E64A19;
+    }
+
+    &__panel-img-mobile {
+        background-image: url("../img/boost/Groupmobile-boost.svg");
+        width: 340px;
+        height: 825px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__panel-img-text1 {
+        display: flex;
+        flex-direction: column;
+        gap: 130px;
+        margin-left: 40px;
+        
+        p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            width: 140px;
+            text-align: center;
+
+            color: #484848;
+        }
+    }
+
+    &__panel-img-text2 {
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+        margin-right: 45px;
+
+        p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 12px;
+            text-align: center;
+            margin-right: 20px;
+            margin-top: 30px;
+
+            color: #484848;
+        }
+    }
+
+}

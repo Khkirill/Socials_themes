@@ -1,0 +1,64 @@
+@import 'components/vars';
+@import 'components/mixins';
+@import 'components/classes';
+@import 'components/normalize';
+
+// reset
+@import 'components/reset';
+@import 'components/default';
+
+// vendors
+@import 'vendor/swiper-bundle';
+@import 'vendor/aos';
+
+// blocks
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/first';
+@import 'blocks/work';
+@import 'blocks/services';
+@import 'blocks/accordion';
+@import 'blocks/pay';
+@import 'blocks/media';
+@import 'blocks/news';
+@import 'blocks/contact';
+
+//Category
+@import 'blocks/category/category';
+@import 'blocks/category/photo';
+@import 'blocks/category/boost';
+@import 'blocks/category/facebook-text';
+@import 'blocks/category/promote';
+
+
+//Contact
+@import 'blocks/contact/contact-page';
+@import 'blocks/contact/follow-page';
+
+//Single-product
+@import 'blocks/single/package';
+
+//About Us
+@import 'blocks/about/about';
+@import 'blocks/about/benefits';
+
+//Form
+@import 'blocks/form/form';
+
+//Categoryinst 
+@import 'blocks/categoryinst/categoryinst';
+@import 'blocks/categoryinst/photoinst';
+@import 'blocks/categoryinst/boostinst-accordion';
+
+//News page
+@import 'blocks/news-page/content-area';
+
+                                    //WOOCOMMERCE
+
+//Cart-empty
+@import 'blocks/cart/cart';
+
+//Single-product
+@import 'blocks/woocommerce/single-product';
+@import 'blocks/woocommerce/accordion-single';
+@import 'blocks/woocommerce/block';

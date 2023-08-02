@@ -1,0 +1,29 @@
+{
+  "name": "fs-path",
+  "version": "0.0.24",
+  "main": "lib/index.js",
+  "author": {
+    "name": "pillys",
+    "email": "pillys@163.com",
+    "url": "http://www.qque.com"
+  },
+  "keywords": [
+    "fs-path",
+    "file",
+    "directory"
+  ],
+  "repository": {
+    "url": "https://github.com/pillys/fs-path",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/pillys/fs-path/issues"
+  },
+  "homepage": "https://github.com/pillys/fs-path",
+  "dependencies": {
+    "async": "~0.9.0"
+  },
+  "description": "file and directory op libs, find, findSync, mkdir, mkdirSync, copy, copySync, remove, removeSync, writeFile, writeFileSync",
+  "readmeFilename": "README.md",
+  "license": "MIT"
+}

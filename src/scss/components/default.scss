@@ -1,0 +1,54 @@
+body {
+  overflow-x: hidden;
+  position: relative;
+  color: $black;
+  @include font('Inter', 400);
+
+  &.active-body {
+    overflow: hidden;
+  }
+
+  
+}
+
+
+/*main {
+  background-image: url("../img/elipse-background-main.svg");
+  background-size: 1440px;
+} */
+
+h1,
+h2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+}
+
+a,
+button {
+  color: $white2;
+}
+
+.container {
+  max-width: 1310px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media(max-width: 430px) {
+    max-width: 430px;
+
+}
+}

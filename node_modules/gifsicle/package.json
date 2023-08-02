@@ -1,0 +1,48 @@
+{
+	"name": "gifsicle",
+	"version": "5.3.0",
+	"description": "gifsicle wrapper that makes it seamlessly available as a local dependency",
+	"license": "MIT",
+	"repository": "imagemin/gifsicle-bin",
+	"funding": {
+		"url": "https://github.com/imagemin/gisicle-bin?sponsor=1"
+	},
+	"bin": {
+		"gifsicle": "cli.js"
+	},
+	"engines": {
+		"node": ">=10"
+	},
+	"scripts": {
+		"postinstall": "node lib/install.js",
+		"test": "xo && ava --timeout=60s"
+	},
+	"files": [
+		"index.js",
+		"cli.js",
+		"lib",
+		"vendor/source"
+	],
+	"keywords": [
+		"imagemin",
+		"gif",
+		"img",
+		"image",
+		"compress",
+		"minify",
+		"optimize",
+		"gifsicle"
+	],
+	"dependencies": {
+		"bin-build": "^3.0.0",
+		"bin-wrapper": "^4.0.0",
+		"execa": "^5.0.0"
+	},
+	"devDependencies": {
+		"ava": "^3.15.0",
+		"bin-check": "^4.0.1",
+		"compare-size": "^3.0.0",
+		"tempy": "^1.0.0",
+		"xo": "^0.38.1"
+	}
+}

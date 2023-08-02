@@ -1,0 +1,16 @@
+@mixin font($ff, $fw) {
+	font-family: $ff;
+	font-weight: $fw;
+}
+
+@mixin flex($align-items:stretch, $justify-content:flex-start, $flex-wrap:nowrap, $flex-direction:row) {
+	display: flex;
+	align-items: $align-items;
+	justify-content: $justify-content;
+	flex-wrap: $flex-wrap;
+	flex-direction: $flex-direction;
+}
+
+@mixin smooth-btn($speed:.3s) {
+	transition: background $speed, color $speed, border-color $speed;
+}

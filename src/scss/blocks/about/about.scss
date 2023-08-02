@@ -1,0 +1,120 @@
+.about {
+    margin-top: 80px;
+
+    @media(max-width: 320px) {
+        width: 320px;
+    }
+
+    h1 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 72px;
+
+        color: #484848;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 54px;
+
+        color: #484848;
+
+        @media(max-width: 430px) {
+            font-size: 28px;
+            text-align: center;
+        }
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+
+        color: #484848;
+
+        @media(max-width: 430px) {
+            font-size: 16px;
+            padding-right: 10px;
+        }
+
+        @media(max-width: 375px) {
+            font-size: 15px;
+        }
+
+        @media(max-width: 320px) {
+            font-size: 14px;
+        }
+    }
+
+    img {
+        width: 610px;
+        height: 374px;
+
+        @media(max-width: 430px) {
+            width: 390px;
+            height: 300px;
+        }
+
+        @media(max-width: 375px) {
+            width: 350px;
+            height: 280px;
+        }
+
+        @media(max-width: 320px) {
+            width: 300px;
+            height: 250px;
+        }
+    }
+
+    &__main {
+        width: 1100px;
+        margin-left: 85px;
+
+        @media(max-width: 430px) {
+            width: 414px;
+            margin-left: 0px;
+        }
+
+        @media(max-width: 375px) {
+            width: 370px;
+        }
+
+        @media(max-width: 320px) {
+            width: 310px;
+        }
+    }
+
+    &__blocks {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        gap: 30px;
+    }
+
+    &__first-block {
+        display: flex;
+        gap: 25px;
+
+        @media(max-width: 430px) {
+            flex-direction: column;
+        }
+    }
+
+    &__second-block {
+        display: flex;
+        gap: 25px;
+
+        @media(max-width: 430px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__first-text,
+    &__second-text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

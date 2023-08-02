@@ -1,0 +1,133 @@
+.news {
+    margin-top: 80px;
+
+    h1 {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 72px;
+
+        text-align: center;
+        color: $grey2;
+
+        @media(max-width: 430px) {
+            font-size: 34px;
+        }
+    }
+
+    &__img {
+        width: 325px;
+        height: 350px;
+    }
+
+
+    &__p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        width: 285px;
+        text-align: center;
+
+        color: $grey2;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+}
+
+.news-slider {
+    gap: 10px;
+    width: 1110px;
+    margin-left: 95px;
+    margin-top: 30px;
+
+    @media(max-width: 430px) {
+        display: none;
+    }
+}
+
+.news-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    gap: 10px;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 34px !important;
+}
+
+.swiper-button-next {
+    right: 0 !important;
+}
+
+.swiper-button-prev {
+    left: 0 !important;
+}
+
+
+//MOBILE
+.news-slider-mobile {
+    display: none;
+    margin-top: 20px;
+
+    @media(max-width: 430px) {
+        display: block;
+    }
+}
+
+.news-item-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    img {
+        width: 301px;
+        height: 301px;
+        background: linear-gradient(180deg, rgba(95, 77, 77, 0.5) 0%, rgba(96, 57, 31, 0.5) 100%);
+        border-radius: 20px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 19px;
+
+        text-align: center;
+        color: #484848;
+    }
+}
+
+
+.swiper-pagination-bullet {
+    width: 18px;
+    height: 18px;
+    background: linear-gradient(180deg, #EA686B 0%, #ED8155 100%);
+}
+ 
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    margin-left: 180px;
+    padding-bottom: 15px;
+}
+
+.swiper-pagination-bullet:after {
+    border: none;
+}
+
+#button-prev-news {
+    padding-bottom: 100px;
+}

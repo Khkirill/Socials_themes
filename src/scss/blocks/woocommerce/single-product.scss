@@ -1,0 +1,16 @@
+.entry-title {
+    width: 100% !important;
+    text-align: center;
+    font-weight: 700 !important;
+    font-size: 48px !important;
+    line-height: 72px !important;
+
+    color: #484848 !important;
+}
+
+.content-area {
+    width: 1400px;
+    &.active-body {
+        overflow: hidden;
+      }
+}

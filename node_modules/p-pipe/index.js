@@ -1,0 +1,15 @@
+export default function pPipe(...functions) {
+	if (functions.length === 0) {
+		throw new Error('Expected at least one argument');
+	}
+
+	return async input => {
+		let currentValue = input;
+
+		for (const function_ of functions) {
+			currentValue = await function_(currentValue); // eslint-disable-line no-await-in-loop
+		}
+
+		return currentValue;
+	};
+}

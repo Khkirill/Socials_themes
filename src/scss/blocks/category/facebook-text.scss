@@ -1,0 +1,54 @@
+.facebook-text {
+    margin-top: 80px;
+
+    @media(max-width: 430px) {
+        display: none;
+    }
+
+
+    &__main {
+        width: 900px;
+    }
+
+    h3 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 46px;
+        margin-bottom: 15px;
+
+        color: #484848;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    li::marker {
+        color: #E64A19;
+    }
+
+    li {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+
+        color: #484848;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+
+        color: #484848;
+    }
+
+    &__p2 {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}

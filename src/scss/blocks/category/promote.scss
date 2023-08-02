@@ -1,0 +1,83 @@
+.promote {
+
+    @media(max-width: 430px) {
+        display: none;
+    }
+
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        height: 334px;
+
+        background-image: url("../img/promote/Group22.svg");
+        background-size: 900px;
+    }
+
+    &__first-block {
+        display: flex;
+        margin-top: 60px;
+        justify-content: space-around;
+        
+    }
+
+    &__second-block {
+        display: flex;
+        align-items: center;
+        margin-left: 100px;
+        gap: 50px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 22px;
+        padding-top: 30px;
+
+        text-align: center;
+        color: #484848;
+    }
+
+    &__block1 {
+        width: 200px;
+        height: 175px;
+    }
+    &__block2 {
+        width: 200px;
+        height: 175px;
+    }
+    &__block3 {
+        width: 200px;
+        height: 175px;
+    }
+    &__block4 {
+        width: 200px;
+        height: 175px;
+    }
+    &__block5 {
+        width: 200px;
+        height: 175px;
+
+        p {
+            padding-top: 0px;
+        }
+    }
+    &__block6 {
+        width: 200px;
+        height: 175px;
+
+        p {
+            padding-top: 0px;
+            padding: 0px 10px;
+        }
+    }
+    &__block7 {
+        width: 200px;
+        height: 175px;
+        padding-right: 20px;
+
+        p {
+            padding-top: 0px;
+        }
+    } 
+}

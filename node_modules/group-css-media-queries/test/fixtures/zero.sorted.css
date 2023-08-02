@@ -1,0 +1,15 @@
+.selector {
+  property: value1;
+}
+
+@media (min-width: 0) {
+  .selector {
+    property: value2;
+  }
+}
+
+@media (min-width: 10px) {
+  .selector {
+    property: value3;
+  }
+}

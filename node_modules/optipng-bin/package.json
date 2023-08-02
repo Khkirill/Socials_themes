@@ -1,0 +1,44 @@
+{
+	"name": "optipng-bin",
+	"version": "7.0.1",
+	"description": "OptiPNG wrapper that makes it seamlessly available as a local dependency",
+	"license": "MIT",
+	"repository": "imagemin/optipng-bin",
+	"bin": {
+		"optipng": "cli.js"
+	},
+	"engines": {
+		"node": ">=10"
+	},
+	"scripts": {
+		"postinstall": "node lib/install.js",
+		"test": "xo && ava --timeout=120s"
+	},
+	"files": [
+		"index.js",
+		"cli.js",
+		"lib",
+		"vendor/source"
+	],
+	"keywords": [
+		"imagemin",
+		"compress",
+		"image",
+		"minify",
+		"optimize",
+		"png",
+		"optipng"
+	],
+	"dependencies": {
+		"bin-build": "^3.0.0",
+		"bin-wrapper": "^4.0.0"
+	},
+	"devDependencies": {
+		"ava": "^3.15.0",
+		"bin-check": "^4.0.1",
+		"compare-size": "^3.0.0",
+		"execa": "^5.0.0",
+		"tempy": "^1.0.0",
+		"xo": "^0.38.1"
+	}
+}
